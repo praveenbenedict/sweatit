@@ -1,0 +1,454 @@
+
+header{
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+header h1{
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+header h1, 
+header h2{
+    font-family: 'Mukta', sans-serif;    
+}
+header h2{
+    color: #CFCFCF;
+}
+
+
+/* About */
+#about .container{
+    display: flex;
+}
+#about .col2{
+    background-image: url(../img/story.jpg);
+    color:white;
+}
+#about .col3{
+    background-color: #090d13;
+}
+#about .col4{
+    background-image: url(../img/classes.jpeg);
+}
+#about .who-we-are{
+    color:white;
+}
+#about .col2 .button{
+    border-radius: 38;
+    background-color: transparent;
+    }
+#about .col2 .button a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    border: 2px solid white;
+    display: block
+
+}
+#about .col2 .button a:hover{
+    border: 2px solid #4b59e3;
+    color:#4b59e3;
+    
+}
+
+/* Gym Summary */
+#gym-summary .container section:nth-child(1),
+#gym-summary .container section:nth-child(3)
+{
+    background-color: #4b59e3;
+}
+#gym-summary .container section:nth-child(2),
+#gym-summary .container section:nth-child(4){
+    background-color: #365196;
+}
+
+#gym-summary p{
+    line-height: 30px;
+}
+.summary-icon{
+    height: 64px;
+    width: 64px;
+}
+
+/* Motivate */
+#motivate{
+    
+}
+#motivate .big-title{
+    color: white;
+    text-transform: uppercase;
+}
+#motivate a{
+    background: transparent;
+    padding: 20px;
+    border: 1px solid #e54444;
+    display: block;
+    width: 25%;
+    text-decoration : none;
+    color:white;
+    transition: 1s;
+}
+#motivate a:hover{
+    background-color: #e54444;
+}
+
+/* pricing table */
+#pricing-table{
+    background: url(../img/pricing-table.jpg);
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#pricing-table .col{
+    background: rgba(0,0,0, 0.8);
+}
+#pricing-table .col .plan-name:nth-child(odd){
+    background-color: #e56464;
+    height: 30%;
+}
+#pricing-table .price,
+#pricing-table .plan-name,
+#pricing-table .plan-details{
+    color :white;
+}
+#pricing-table .plan-name{
+    font-size: 180%;
+}
+#pricing-table .price{
+    font-size: 150%;
+}
+#pricing-table .amount{
+    background: rgba(0,0,0, 0.8);
+    padding: 30px;
+}
+#pricing-table .button{
+    color:white;
+    margin : 30px;
+    
+    /* width: 100%; */
+}
+
+#pricing-table .button a{
+    color:white;
+    text-decoration: none;
+    background-color: #e56464;
+    display: block;
+    border-radius:40px;
+    padding: 20px;
+
+}
+/* Pushing */
+#pushing{
+    background: url(../img/pushing.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+/* Testimonial */
+#testimonial{
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+}
+#testimonial .testimonial-container{
+    background-color: #ec3642;
+    
+}
+
+#testimonial .testimonial-selector,
+#testimonial .testimonial-container{
+    
+    width: 100%;
+}
+#testimonial .testimonial-selector{
+    display: flex;
+    background-color: #242424;
+}
+#testimonial .testimonial-selector .testimonial-select{
+    flex:1;
+}
+#testimonial .testimonial-selector .active{
+    background-color: #ec3642;;
+}
+#testimonial .testimonial-container .image-box img{
+    height: 100%;
+    width:100%;
+}
+#testimonial .testimonial-selector{
+    color:white;
+    font-size: 26px;
+}
+#testimonial .testimonial-selector{
+    height: 100px;
+}
+/* Footer */
+#footer{
+    margin:0px;
+    /* display: block; */
+    background-color: black;
+    height:100%;
+}
+#footer p{
+    
+    padding: 10px;
+    color: white;
+}
+#footer p a{
+    color: white;
+}
+
+
+
+@media only screen and (max-width:1024px){
+    /* Properties common for both small devices and tablets */
+    #about{
+        min-height: 150vh;
+    }
+    #about .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #about .col1{
+         /* display: flex;
+         flex-direction:  column;
+         min-height:60vh; */
+         width: 100%;
+    }
+    #about .col2,
+    #about .col3,
+    #about .col4{
+         width: 100%;
+         min-height: 50vh;
+    }
+
+    /* Gym Summary */
+    #gym-summary{
+        height: 1000px;
+    }
+    #gym-summary .container{
+        display:block;
+    }
+    #gym-summary .container .col{
+        width: 100%;
+        height: 250px;
+    }
+    #gym-summary .num-big{
+        font-size: 35px;
+    }
+
+    /* Motivate */
+}
+@media only screen and (min-width :768px){
+    /* Tablets and Large Screens */
+    #about .col2{
+        font-size:130%;
+    }
+    #pricing-table{
+        display: flex;
+        /* height: 140vh; */
+        justify-content: space-around;
+        background-color: black;
+        flex-direction: row;
+    }
+    #pricing-table .col{
+        flex-basis: 30%;
+        align-items: stretch;
+        /* height: 125vh; */
+        
+    }
+    #pushing{
+        font-size: 180%;
+    }
+    /* Testimonial */
+    #testimonial .testimonial-container{
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #testimonial .testimonial-container .image-box{
+        flex: 2;
+        height: 300px;
+    }
+    #testimonial .testimonial-container .review-box{
+        flex: 4;
+        height: 300px;
+        background-color: #ec3642;
+        font-size: 22px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    /* Small Screens */
+    /* Header */
+   header{
+       background-image: url(../img/landing-xs.jpeg);        
+   }
+   header h1{
+       font-size: 40px;
+       margin: 3px 0px 3px 0px;
+   }
+   header h2{
+       font-size:15px;
+   }
+   /* About */
+   #about .content{
+        padding: 10px;
+   } 
+   
+   /* Gym-summary */
+
+   /*Motivate*/
+   #motivate{
+       height: 100vh;
+       background: url(../img/motivate-xs.jpg);
+       background-size: cover;
+       background-attachment: fixed;
+   }
+   #motivate .services-link{
+        font-size: 140%;
+        width: 60%;
+   }
+
+   /* Pricing */
+   #pricing-table{
+       display: block;
+       padding-top: 10%;
+       padding-bottom:10%;
+   }
+   #pricing-table .col{
+        width: 80%;
+        margin: auto 10% 40px 10%;
+   }
+   /* Testimonial */
+   #testimonial .testimonial-container{
+       display: block;
+       min-height: 530px;
+   }
+   #testimonial .testimonial-container .image-box{
+        height: 350px;
+   }
+   #testimonial .testimonial-container .review-box{
+        height: 180px;
+        font-size: 18px;
+    }
+    #testimonial .testimonial-selector{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    /* Tablets */
+    header{
+        background-image: url(../img/landing-xs.jpeg);
+    }
+    .who-we-are{
+        padding: 15px;
+        font-size: 135%;
+    }
+    /* Motivate */
+    #motivate{
+        height: 90vh;
+        background: url(../img/motivate-sm.jpg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #motivate .big-title{
+        font-size: 200%;
+    }
+    #motivate .services-link{
+        font-size: 140%;
+    }
+   
+}
+
+
+
+
+@media screen and (min-width: 1025px){
+    /* Large Screens */
+    header{
+        background-image: url(../img/landing.jpeg);
+    }
+
+    #about{
+        height: 170vh;
+    }
+    #about .container{
+        min-height:100%;
+        flex-direction: row;
+    }
+    #about .col1{
+        flex:1;
+        min-height: 100%;
+        background-color: black;
+    }
+    #about .col2{
+        flex:1;
+        min-height: 100%;
+        text-align:right;
+        
+    }
+
+    #about .col3{
+        flex-basis: 100%;
+        min-height:50%;
+        margin: 0px;
+        
+    }
+    #about .col4{
+        flex-basis: 100%;
+        height:50%;
+    }
+
+    #about .col3 h1{
+        text-align: left;
+        padding:20px auto 0px auto;
+    }
+    #about .col3 p{
+        text-align: left;
+        padding: 40px 20px 80px 20px;
+    }
+    .who-we-are{
+        font-size: 100%;
+    }
+
+    /* Gym Summary */
+    #gym-summary{
+        height:280px;
+    }
+    #gym-summary .container{
+        align-items: stretch;
+        height: 100%;
+    }
+    #gym-summary .container .col{
+        height: 100%;
+        flex:1;
+        
+    }
+    #gym-summary .num-big{
+        font-size: 35px;
+    }
+
+    /* Motivate */
+    #motivate{
+        height: 700px;
+        background: url(../img/motivate.jpeg);
+        background-position: top left;
+        background-attachment: fixed;
+    }
+    #motivate .big-title{
+        font-size: 300%;
+    }
+    #motivate .services-link{
+        font-weight: bold;
+        font-size: 150%;
+    }
+}

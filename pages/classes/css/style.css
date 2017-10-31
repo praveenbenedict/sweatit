@@ -1,0 +1,45 @@
+body{
+    background-color: #242424;
+}
+header{
+    height: 75vh;
+    background-image: url(../img/header.jpeg);
+    background-attachment: fixed;
+    margin-bottom: 70px;
+    color: white;
+}
+.container section{
+    height: 300px;
+    flex:1;
+    margin:10px;
+}
+.boxing-for-girls{
+    background-image: url(../img/boxing-girls.jpeg);
+}
+.yoga-for-girls{
+    background-image: url(../img/yoga-women.jpeg);
+}
+.boxing-for-men{
+    background-image: url(../img/boxing-men.jpeg);
+}
+.advanced-fitness{
+    background-image: url(../img/advanced-training.jpeg);
+}
+.fitness-for-men{
+    background-image: url(../img/fitness-men.jpeg);
+}
+.strength-training{
+    background-image: url(../img/strength-training.jpeg);
+}
+.training-psychology{
+    background-image: url(../img/psychology-training.jpeg);
+}
+.cardio-women{
+    background-image: url(../img/cardio.jpg);
+}
+.aerobic-masterclass{
+    background-image: url(../img/aerobics.jpeg)
+}
+.self-defense{
+    background-image: url(../img/self.jpg);
+}
